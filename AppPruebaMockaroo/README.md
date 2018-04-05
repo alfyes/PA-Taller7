@@ -10,4 +10,4 @@
 
 ## Comproibación de Funcionamiento
 
-![](/PruebaAPIMockaroo.gif)
+![](PruebaAPIMockaroo.gif)
