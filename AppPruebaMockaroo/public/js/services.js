@@ -3,7 +3,7 @@
  */
 
 angular.module('movieApp.services', []).factory('Movie', function ($resource) {
-    return $resource('AQUI VA SU URL', { id: '@_id' }, {
+    return $resource('https://my.api.mockaroo.com/movies/:id.json?key=291c0950', { id: '@_id' }, {
         update: {
             method: 'PUT'
         }
