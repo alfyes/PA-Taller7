@@ -7,3 +7,7 @@
 ## Ejecución
 
 `node server.js`
+
+## Comproibación de Funcionamiento
+
+![](/PruebaAPIMockaroo.gif)
