@@ -48,7 +48,7 @@ public class AuthorTest  extends TestCase {
             Assert.assertEquals(newBook.getName(), book.getName());
             Assert.assertEquals(newBook.getCode(), book.getCode());
             Assert.assertEquals(newBook.getType(), book.getType());
-            //Assert.assertNotNull(book.getPublicationDate());
+            Assert.assertNotNull(book.getPublicationDate());
         }
     }
 
