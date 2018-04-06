@@ -21,7 +21,6 @@ public class Book {
 
     private String name;
 
-    @PodamExclude
     private Date publicationDate;
     
     @PodamStrategyValue(CodeBookStratergy.class)
