@@ -9,10 +9,15 @@ import uk.co.jemos.podam.common.PodamStrategyValue;
 import java.util.Date;
 
 public class Book {
-    private int id;
-
+    
+	public enum TypeBook{
+		BIOGRAPHIES, SCIENTISTS, SCIENCE_fICTION
+	}
+	
+	private int id;
+    
     @PodamStrategyValue(TypeBookStratergy.class)
-    private String type;
+	private TypeBook type;
 
     private String name;
 
@@ -30,11 +35,11 @@ public class Book {
         this.id = id;
     }
 
-    public String getType() {
+    public TypeBook getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(TypeBook type) {
         this.type = type;
     }
 

@@ -7,15 +7,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-public class TypeBookStratergy implements AttributeStrategy<String> {
+import co.edu.uniandes.Workshop7.Library.Entities.Book.TypeBook;
 
-    private static final List<String> TYPES  =  Arrays.asList("Biographies", "Scientists", "Science fiction");
+public class TypeBookStratergy implements AttributeStrategy<TypeBook> {
 
     @Override
-    public String getValue(Class<?> aClass, List<Annotation> list) {
+    public TypeBook getValue(Class<?> aClass, List<Annotation> list) {
         Random r = new Random();
-
+        int can = TypeBook.values().length;
         int pos =r.nextInt(100000) % 3;
-        return TYPES.get(pos);
+        return TypeBook.values()[r.nextInt(100000) % can];
     }
 }
