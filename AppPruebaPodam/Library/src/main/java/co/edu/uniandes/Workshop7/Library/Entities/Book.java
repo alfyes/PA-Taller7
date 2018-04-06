@@ -1,6 +1,8 @@
 package co.edu.uniandes.Workshop7.Library.Entities;
 
 import co.edu.uniandes.Workshop7.Library.TypeBookStratergy;
+import co.edu.uniandes.Workshop7.Library.CodeBookStratergy;
+
 import uk.co.jemos.podam.common.PodamExclude;
 import uk.co.jemos.podam.common.PodamStrategyValue;
 
@@ -16,6 +18,8 @@ public class Book {
 
     @PodamExclude
     private Date publicationDate;
+    
+    @PodamStrategyValue(CodeBookStratergy.class)
     private String code;
 
     public int getId() {
